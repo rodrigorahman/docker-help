@@ -19,3 +19,25 @@ docker rm $( docker ps -q -f status=exited)
 ```
 docker rmi $( docker images -q -f dangling=true)
 ```
+
+## Registrando um repositorio remoto
+Basta logar e digitar o login e senha
+
+** Caso você esteja utilizando no MAC ou Windows vá em settings do docker e adicione o repositorio lá
+
+```
+docker login cvcregistry01.xyz.com.br:5000
+```
+
+## Adicionando certificado no MacOSX
+***Crie um diretório em ~/.boot2docker/certs/ ex:***
+
+```
+mkdir ~/.boot2docker/certs/cvcregistry01.xyz.com.br:5000
+```
+
+***Crie um o certificado***
+```
+touch ~/.boot2docker/certs/cvcregistry01.xyz.com.br:5000/ca.crt
+```
+Adicione o dados do certificado e pronto está funcionando
