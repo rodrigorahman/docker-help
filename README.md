@@ -41,3 +41,14 @@ mkdir ~/.boot2docker/certs/cvcregistry01.xyz.com.br:5000
 touch ~/.boot2docker/certs/cvcregistry01.xyz.com.br:5000/ca.crt
 ```
 Adicione o dados do certificado e pronto está funcionando
+
+# Mudando o IP da docker0
+
+Crie o arquivo /etc/docker/daemon.json
+
+```json
+{
+   "bip": "172.18.12.1/24"
+}
+```
+ Restart do daemon: systemctl restart docker
