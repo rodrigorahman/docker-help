@@ -52,3 +52,10 @@ Crie o arquivo /etc/docker/daemon.json
 }
 ```
  Restart do daemon: systemctl restart docker
+
+# Atualizando Docker no Linux
+
+```
+sudo apt-get upgrade docker-engine
+```
+
