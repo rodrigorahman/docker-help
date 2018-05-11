@@ -59,3 +59,12 @@ Crie o arquivo /etc/docker/daemon.json
 sudo apt-get upgrade docker-engine
 ```
 
+# Fazendo uma manutenção no seu docker
+
+Purging All Unused or Dangling Images, Containers, Volumes, and Networks
+
+```
+docker system prune
+``` 
+
+
