@@ -67,4 +67,11 @@ Purging All Unused or Dangling Images, Containers, Volumes, and Networks
 docker system prune
 ``` 
 
+# Removendo todas as redes do docker
+
+utilizado para quando o ip da docker o mesmo do seu servidor.
+
+```
+docker network prune
+``` 
 
